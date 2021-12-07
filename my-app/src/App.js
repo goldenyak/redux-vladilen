@@ -1,5 +1,8 @@
 import {Button} from "bootstrap";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import PostForm from "./components/PostForm";
+import Posts from "./components/Posts";
+import FetchedPosts from "./components/FetchedPosts";
 
 
 function App() {
@@ -8,15 +11,15 @@ function App() {
         <div className="container pt-3">
             <div className="row">
                 <div className="col">
-                    form
+                    <PostForm/>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    posts
+                    <Posts/>
                 </div>
                 <div className="col">
-                    post
+                    <FetchedPosts/>
                 </div>
             </div>
         </div>
