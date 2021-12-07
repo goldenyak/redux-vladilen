@@ -11,12 +11,20 @@ export default class PostForm extends React.Component {
 
     submitHandler = (event) => {
         event.preventDefault();
+        const {title} = this.state
+        const newPost = {
+            title,
+            id: Date.now().toString(),
+        }
+        console.log(newPost)
     }
 
     changeInputHandler = (event) => {
-        this.setState(prev => ({...prev, ...{[event.target.name]: [event.target.value]}})
+        event.persist()
+        this.setState(prev => ({...prev, ...{[event.target.name]: event.target.value}})
         )
     }
+
 
     render() {
         return (
