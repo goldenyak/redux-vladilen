@@ -1,7 +1,13 @@
 import React from "react";
 
-export default () => {
+export default ({post}) => {
     return (
-        <div>Post</div>
+        <div className="card">
+            <div className="card-body">
+                <div className="card-title">
+                    Title here {post}
+                </div>
+            </div>
+        </div>
     )
 }
