@@ -5,7 +5,7 @@ export default ({post}) => {
         <div className="card">
             <div className="card-body">
                 <div className="card-title">
-                    Title here {post}
+                  {post.title}
                 </div>
             </div>
         </div>

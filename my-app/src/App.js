@@ -1,5 +1,3 @@
-import {Button} from "bootstrap";
-import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import PostForm from "./components/PostForm";
 import Posts from "./components/Posts";
 import FetchedPosts from "./components/FetchedPosts";
@@ -17,7 +15,7 @@ function App() {
             <div className="row">
                 <div className="col">
                     <h3>Синхронные посты</h3>
-                    <Posts posts={[]}/>
+                    <Posts/>
                 </div>
                 <div className="col">
                     <h3>Асинхронные посты</h3>
