@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchPosts} from "../redux/actions";
 import Post from "./Post";
 import {postsReducer} from "../redux/postsReduser";
+import Loader from "./Loader";
 
 export default () => {
     const dispatch = useDispatch()
@@ -11,9 +12,7 @@ export default () => {
 
     if (loading === true) {
         return (
-            <div className="spinner-border text-danger" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </div>
+          <Loader />
         )
     }
 
